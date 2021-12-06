@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Forum&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+        <div class="welcome">
+            <div class="wrapper">
+                <div class="header">
+                    <h1>Louvre</h1>
+                    <nav class="header__nav">
+                        <ul class="header__list">
+                            <li class="header__item"><a href="#" class="header__link">Visiting</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Explore</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Video</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Tickets</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="welcome-container">
+                    <div class="welcome__main">
+                        <h2>Weclome <br> to the Louvre</h2>
+                        <h4>From the castle to the museum</h4>
+                        <button type="submit"><p>Discover the Louvre</p></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tour">
+            <div class="wrapper">
+                <h2>Vitrual tour</h2>
+                <hr>
+                <div class="places">
+                    <div class="place">
+                        <img src="images/Rectangle.jpg" alt="">
+                        <h3>Royal Palace</h3>
+                        <hr>
+                        <p class="text-1">360° Virtual Tour</p>
+                        <p class="text-2">Google Street Panorama View</p>
+                    </div>
+                    <div class="place">
+                        <img src="images/Rectangle (1).jpg" alt="">
+                        <h3>Denon Wing</h3>
+                        <hr>
+                        <p class="text-1">360° Virtual Tour</p>
+                        <p class="text-2">Google Street Panorama View</p>
+                    </div>
+                    <div class="place">
+                        <img src="images/Rectangle (2).jpg" alt="">
+                        <h3>Colonnade Perrault</h3>
+                        <hr>
+                        <p class="text-1">360° Virtual Tour</p>
+                        <p class="text-2">Google Street Panorama View</p>
+                    </div>
+                    <div class="place">
+                        <img src="images/Rectangle (3).jpg" alt="">
+                        <h3>Greek hall</h3>
+                        <hr>
+                        <p class="text-1">360° Virtual Tour</p>
+                        <p class="text-2">Google Street Panorama View</p>
+                    </div>
+                    <div class="place">
+                        <img src="images/Rectangle (4).jpg" alt="">
+                        <h3>Mona Lisa</h3>
+                        <hr>
+                        <p class="text-1">360° Virtual Tour</p>
+                        <p class="text-2">Google Street Panorama View</p>
+                    </div>
+                    <div class="place">
+                        <img src="images/Rectangle (5).jpg" alt="">
+                        <h3>Night Palace</h3>
+                        <hr>
+                        <p class="text-1">360° Virtual Tour</p>
+                        <p class="text-2">Google Street Panorama View</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="explore">
+            <div class="wrapper">
+                <div class="explore__text">
+                    <h2>Picture explore</h2>
+                    <hr>
+                    <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+                    <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
+                    <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
+                </div>
+                <div class="explore__img">
+                    <img src="images/explore.png" alt="" >
+                </div>
+            </div>
+        </div>
+
+        <div class="videoplayer">
+            <div class="wrapper">
+                <div class="player">
+                    <video src="minecraft.mp4" class="video"></video>
+                    <button class="on_screnn_play"></button>
+                    <div class="controls">
+                        <button class="backward-step"></button>
+                        <button class="play" id="play-pause"></button>
+                        <button class="forward-step"></button>
+                        <input type="range" class="time-bar" min="0" max="100" step="0.1" value="0">
+                        <button class="mute" id="mute-muted"></button>
+                        <input type="range" class="sound-bar" id="sound-bar" min="0" max="1" step="0.01" value="0.5">
+                        <span class="timestamp" id="timestamp">00:00</span>
+                        <button class="full-screen" id="full-screen"></button>
+                    </div>
+                </div>
+                <div>
+                    <div class="video__text">
+                        <h2>Video journey</h2>
+                        <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tickets">
+            <div class="wrapper">
+                <h2>Buy tickets</h2>
+                <hr>
+                <div class="tickets__main">
+                    <img src="images/ticket_image.png" alt="">
+                    <div class="tickets__choice">
+                        <div class="tickets__list">
+                            <h5>Ticket Type</h5>
+                            <div>
+                                <input type="radio" name="rb" id="rb1" checked> <label for="rb1">Permanent exhibition</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rb" id="rb2"> <label for="rb2">Temporary exhibition</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="rb" id="rb3"> <label for="rb3">Combined Admission</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <h5>Amount</h5>
+                        <p>Basic 18+</p>
+                        <div class="amount__18">
+                            <span class="plus-minus">–</span>
+                            <span class="amount__count">1</span>  
+                            <span class="plus-minus">+</span>
+                        </div>
+                        <p>Senior 65+</p>
+                        <div class="amount__65">
+                            <span class="plus-minus">–</span>
+                            <span class="amount__count">1</span>  
+                            <span class="plus-minus">+</span>
+                        </div>
+                        <span class="total">Total €</span>
+                        <span class="total">220</span>
+                        <br>
+                        <button type="submit"><span>Buy Now</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts">
+            <div class="wrapper">
+                <h2>Contacts</h2>
+                <hr>
+                <div class="contacts__main">
+                    <div class="contacts__main-info">
+                        <h6>Palais Royal <br> Musee du Louvre</h6>
+                        <p>address: 75001 Paris, France</p>
+                        <p>phone: +33(0) 1 40 20 50 50</p>
+                        <p>mail: info@louvre.fr</p>
+                    </div>
+                    <img src="images/map.png" alt="" class="contacts__main-img">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="wrapper">
+                <div class="footer__content">
+                    <h1>Louvre</h1>
+                    <div class="footer__list">
+                        <ul class="footer__list">
+                            <li class="header__item"><a href="#" class="header__link">Welcome</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Visiting</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Explore</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Video</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Tickets</a></li>
+                            <li class="header__item"><a href="#" class="header__link">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__icons">
+                        <img src="images/youtube.svg" alt="">
+                        <img src="images/inst.svg" alt="">
+                        <img src="images/facebook.svg" alt="">
+                        <img src="images/twitter.svg" alt="">
+                        <img src="images/p.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="/scripts/script.js"></script>
+    </body>
+</html>
